@@ -1,0 +1,76 @@
+// Reset All Elements
+// @use "/css/sass/helpers/index";
+@use "../helpers/index" as *;
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+// ::-webkit-scrollbar {
+//   width: 12px;
+// }
+
+// ::-webkit-scrollbar-track {
+//   background: #fff;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background: #29853c;
+// }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add Font */
+@font-face {
+  font-family: sectionFont;
+  src: url("/assets/font/Fuzzy_Bubbles/FuzzyBubbles-Regular.ttf")
+}
+
+@font-face {
+  font-family: sectionFontBold;
+  src: url("/assets/font/Fuzzy_Bubbles/FuzzyBubbles-Bold.ttf")
+}
+
+@font-face {
+  font-family: mainFont-bold;
+  src: url("/assets/font/IBM_Plex_Sans_JP/IBMPlexSansJP-Bold.ttf")
+}
+
+@font-face {
+  font-family: mainFont-regular;
+  src: url("/assets/font/IBM_Plex_Sans_JP/IBMPlexSansJP-Regular.ttf")
+}
+
+@font-face {
+  font-family: mainFont-thin;
+  src: url("/assets/font/IBM_Plex_Sans_JP/IBMPlexSansJP-Thin.ttf")
+}
+
+body {
+  background-color: $body-Color;
+  margin: 0;
+  font-size: 1rem;
+  font-family: $font-regular;
+  overflow-x: hidden !important;
+  // direction: rtl;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

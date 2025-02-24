@@ -1,0 +1,30 @@
+@use "./base/reset" as *;
+@use "./helpers/index" as *;
+@use "./layout/layout" as *;
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+$text-font: "EB Garamond", serif;
+$h1-font: "Lora", serif;
+$h2-font: "EB Garamond", serif;
+
+$book-h-ratio: 8.5;
+$book-w-ratio: 5.5;
+$book-size: 77px;
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    min-width: 900px;
+    min-height: 700px;
+    background: #fbecb4;
+    position: relative;
+}
