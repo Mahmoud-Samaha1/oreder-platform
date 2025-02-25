@@ -1,156 +1,141 @@
-section .title-input input {
-  color: white !important;
-}
-section .title-input input:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-}
-section .price-inputs .price input {
-  color: white !important;
-}
-section .price-inputs .price input:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-}
-section .price-inputs .taxes input {
-  color: white !important;
-}
-section .price-inputs .taxes input:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-}
-section .price-inputs .ads input {
-  color: white !important;
-}
-section .price-inputs .ads input:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-}
-section .price-inputs .discount input {
-  color: white !important;
-}
-section .price-inputs .discount input:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-}
-section .price-inputs p {
-  background-color: rgb(180, 2, 2);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-section .count-input input {
-  color: white !important;
-}
-section .count-input input:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-}
-section .category input {
-  color: white !important;
-}
-section .category input::-webkit-input-placeholder {
-  color: rgb(61, 61, 61);
-}
-section .category input::-moz-placeholder {
-  color: rgb(61, 61, 61);
-}
-section .category input:-ms-input-placeholder {
-  color: rgb(61, 61, 61);
-}
-section .category input::-ms-input-placeholder {
-  color: rgb(61, 61, 61);
-}
-section .category input::placeholder {
-  color: rgb(61, 61, 61);
-}
-section .category input:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-}
-section .create-btn button {
-  background-color: rgb(84, 38, 191) !important;
-}
-section .create-btn button:hover {
-  background-color: rgb(120, 38, 191) !important;
-}
-section .create-btn button:active {
-  border-color: rgb(172, 120, 255) !important;
-}
-section .search .search-input input {
-  color: white !important;
-}
-section .search .search-input input::-webkit-input-placeholder {
-  color: rgb(61, 61, 61);
-}
-section .search .search-input input::-moz-placeholder {
-  color: rgb(61, 61, 61);
-}
-section .search .search-input input:-ms-input-placeholder {
-  color: rgb(61, 61, 61);
-}
-section .search .search-input input::-ms-input-placeholder {
-  color: rgb(61, 61, 61);
-}
-section .search .search-input input::placeholder {
-  color: rgb(61, 61, 61);
-}
-section .search .search-input input:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-}
-section .search .buttons .search-by-title-btn button {
-  background-color: rgb(84, 38, 191) !important;
-}
-section .search .buttons .search-by-title-btn button:hover {
-  background-color: rgb(120, 38, 191) !important;
-}
-section .search .buttons .search-by-title-btn button:active {
-  border-color: rgb(172, 120, 255) !important;
-}
-section .search .buttons .search-by-category-btn button {
-  background-color: rgb(84, 38, 191) !important;
-}
-section .search .buttons .search-by-category-btn button:hover {
-  background-color: rgb(120, 38, 191) !important;
-}
-section .search .buttons .search-by-category-btn button:active {
-  border-color: rgb(172, 120, 255) !important;
-}
-input {
-  color: white !important;
-}
-input::-webkit-input-placeholder {
-  color: rgb(61, 61, 61) !important;
-}
-input::-moz-placeholder {
-  color: rgb(61, 61, 61) !important;
-}
-input:-ms-input-placeholder {
-  color: rgb(61, 61, 61) !important;
-}
-input::-ms-input-placeholder {
-  color: rgb(61, 61, 61) !important;
-}
-input::placeholder {
-  color: rgb(61, 61, 61) !important;
-}
-input:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
-          box-shadow: 0 0 0 0.25rem rgb(84, 38, 191);
+/*Themes */
+:root {
+  --main-bg-color: rgb(255, 255, 255);
+  --main-color: rgb(102, 44, 121);
+  --hover-color: rgb(248 218 255);
+  --main-text: rgb(0, 0, 0);
 }
 
-button {
-  background-color: rgb(84, 38, 191) !important;
+.red-theme {
+  --main-bg-color: rgb(255, 255, 255);
+  --main-color: rgb(213, 17, 17);
+  --hover-color: rgb(255, 218, 218);
+  --main-text: rgb(0, 0, 0);
 }
-button:hover {
-  background-color: rgb(120, 38, 191) !important;
+
+/* style home page */
+a {
+  text-decoration: none;
+  color: var(--main-text);
 }
-button:active {
-  border-color: rgb(172, 120, 255) !important;
+
+.app {
+  height: 100vh;
+  margin: 0;
+
+  .mobile-app-wrapper {
+    width: 400px !important;
+
+    .mobile-app {
+
+
+      .home-page {
+
+        /* search */
+        .search {
+          .searchBar {}
+
+          #searchQueryInput {
+
+            height: 2.8rem;
+            background: #f5f5f5;
+            outline: none;
+            border: none;
+            border-radius: 1.625rem;
+            padding: 0 3.5rem 0 1.5rem;
+            font-size: 1rem;
+          }
+
+          #searchQuerySubmit {
+            position: absolute;
+            right: 327px;
+            width: 3.5rem;
+            height: 2.8rem;
+            /* margin-left: -3.5rem; */
+            background: none;
+            border: none;
+            outline: none;
+          }
+
+          #searchQuerySubmit:hover {
+            cursor: pointer;
+          }
+        }
+
+        /* categories */
+        .categories {
+          .head-line {
+            h6 {}
+
+            a {
+              font-size: 12px;
+              font-weight: 500;
+            }
+          }
+
+          .items {
+            .item {
+              a {
+                img {
+                  aspect-ratio: 1;
+                  border-radius: 7px;
+                  object-fit: cover;
+                  height: auto;
+                  max-width: 100%;
+                  width: 100%;
+                }
+
+                h6 {}
+              }
+            }
+          }
+        }
+      }
+
+      /* Routing */
+      .routing-bar {
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        width: 400px;
+        z-index: 1000;
+        background-color: var(--main-bg-color);
+
+        div {
+          &:hover {
+            background-color: var(--hover-color);
+          }
+
+          a {
+            margin-block: 5px;
+            color: var(--main-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            i {
+              font-size: 20px;
+            }
+
+            p {
+              margin: 0 !important;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .desktop-bg {
+    background: url("/assets/images/dinner-table-salads-steaks-fries_140725-9517.jpg");
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    position: relative;
+  }
 }
