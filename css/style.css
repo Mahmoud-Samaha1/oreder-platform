@@ -25,9 +25,33 @@ a {
 
   .mobile-app-wrapper {
     width: 400px !important;
+    height: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f136;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: var(--hover-color);
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: var(--main-color);
+    }
 
     .mobile-app {
-
+      .logo {}
 
       .home-page {
 
@@ -96,8 +120,7 @@ a {
       .routing-bar {
         bottom: 0;
         right: 0;
-        position: fixed;
-        width: 400px;
+        position: sticky;
         z-index: 1000;
         background-color: var(--main-bg-color);
 
