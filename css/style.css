@@ -11,7 +11,22 @@
   --main-color: rgb(213, 17, 17);
   --hover-color: rgb(255, 218, 218);
   --main-text: rgb(0, 0, 0);
+  --regular-font: "tajwal-regular";
+  --bold-font: "tajwal-bold"
 }
+
+/* fonts */
+
+@font-face {
+  font-family: tajwal-regular;
+  src: url("/assets/fonts/Tajawal-Regular.ttf");
+}
+
+@font-face {
+  font-family: tajwal-bold;
+  src: url("/assets/fonts/Tajawal-Bold.ttf");
+}
+
 
 /* style home page */
 a {
@@ -22,6 +37,7 @@ a {
 .app {
   height: 100vh;
   margin: 0;
+  font-family: var(--regular-font);
 
   .mobile-app-wrapper {
     width: 400px !important;
@@ -57,7 +73,10 @@ a {
 
         /* search */
         .search {
-          .searchBar {}
+          .searchBar {
+            background: #f5f5f5;
+            border-radius: 1.625rem;
+          }
 
           #searchQueryInput {
 
@@ -66,12 +85,12 @@ a {
             outline: none;
             border: none;
             border-radius: 1.625rem;
-            padding: 0 3.5rem 0 1.5rem;
+            /* padding: 0 3.5rem 0 1.5rem; */
             font-size: 1rem;
           }
 
           #searchQuerySubmit {
-            position: absolute;
+
             right: 327px;
             width: 3.5rem;
             height: 2.8rem;
@@ -99,6 +118,10 @@ a {
 
           .items {
             .item {
+              &:hover {
+                cursor: pointer;
+              }
+
               a {
                 img {
                   aspect-ratio: 1;
@@ -160,5 +183,59 @@ a {
     flex: 1 1;
     justify-content: center;
     position: relative;
+    padding: 0px !important;
+
+    .gradient {
+      background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 212, 255, 0) 100%);
+      ;
+    }
+  }
+}
+
+/* ================================================================================ */
+
+/* Category */
+.category {
+
+  .category-img {
+    border-radius: 15px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  h1 {
+    font-family: var(--bold-font);
+  }
+
+  .category-description {}
+
+  .products {
+    .product {
+      img {
+        height: 100px;
+        border-radius: 15px;
+      }
+
+      .product-details {
+        h5 {
+          font-family: var(--bold-font);
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+
+      .product-price {
+        p {
+          font-family: var(--bold-font);
+        }
+
+        .like-icon {
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
