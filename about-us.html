@@ -50,33 +50,25 @@
               <i class="fi fi-rr-arrow-left"></i>
             </button>
           </div>
-          <!-- product -->
-          <div class="product-details">
-            <img
-              class="product-img mt-3"
-              data-src="/assets/images/66MTIsqFHUgKyzrPYh266VvDFsGbkK9WduHU4ALV.jpg"
-              alt=""
-            />
-            <div class="row align-items-center mt-3">
-              <div
-                class="col-9 d-flex justify-content-start align-items-center"
-              >
-                <h1 id="product-title " class="product-title m-0">
-                  اسم المنتج
-                </h1>
-              </div>
-              <div class="col-3">
-                <div
-                  class="product-price fs-3 d-flex justify-content-center align-items-center"
-                >
-                  <p class="text-center m-0 me-1">175</p>
-                  <span class="">EGP</span>
-                </div>
-              </div>
+          <!-- about us -->
+          <div class="contact-container">
+            <h2>Contact Us</h2>
+
+            <div class="contact-info">
+              <p>📞 Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+              <p>📩 SMS: <a href="sms:+1234567890">Send a text</a></p>
             </div>
-            <p id="product-description " class="product-description mt-2">
-              هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
-            </p>
+
+            <div class="social-media">
+              <a href="fb://profile" target="_blank">🌐 Facebook</a>
+              <a href="instagram://user?username=yourusername" target="_blank"
+                >📸 Instagram</a
+              >
+              <a href="twitter://user?screen_name=yourusername" target="_blank"
+                >🐦 Twitter</a
+              >
+              <a href="https://wa.me/1234567890" target="_blank">💬 WhatsApp</a>
+            </div>
           </div>
           <!-- nav bar -->
           <div class="routing-bar row col-4">
@@ -111,5 +103,22 @@
     </div>
     <script src="/JS/main.js"></script>
     <script src="/JS/category.js"></script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const categoryId = urlParams.get("id");
+
+      if (categoryId && !isNaN(categoryId)) {
+        document.getElementById(
+          "category-title"
+        ).innerText = `قسم ${categoryId}`;
+        document.getElementById(
+          "category-description"
+        ).innerText = `هذه تفاصيل القسم رقم ${categoryId}.`;
+      } else {
+        document.getElementById("category-title").innerText = "القسم غير موجود";
+        document.getElementById("category-description").innerText =
+          "يرجى اختيار قسم صحيح.";
+      }
+    </script>
   </body>
 </html>

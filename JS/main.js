@@ -17,6 +17,51 @@ document.addEventListener("DOMContentLoaded", function () {
     images.forEach(img => observer.observe(img));
 });
 //_________________________________________________________
+// Nav Bar
+window.onload = function () {
+    let savedPage = localStorage.getItem('selectedPage') || 'main';
+    applySelectedPage(savedPage);
+};
+
+function savePage(pageName) {
+    localStorage.setItem('selectedPage', pageName); // Save selected page before navigating
+}
+
+function applySelectedPage(pageName) {
+    resetIcons();
+
+    let iconMap = {
+        main: { selector: '.main', defaultClass: 'fi-rr-home', selectedClass: 'fi-ss-home' },
+        offer: { selector: '.offer', defaultClass: 'fi-rr-badge-percent', selectedClass: 'fi-ss-badge-percent' },
+        about: { selector: '.about', defaultClass: 'fi-rr-info', selectedClass: 'fi-ss-info' }
+    };
+
+    if (iconMap[pageName]) {
+        let icon = document.querySelector(iconMap[pageName].selector);
+        if (icon) {
+            icon.classList.remove(iconMap[pageName].defaultClass);
+            icon.classList.add(iconMap[pageName].selectedClass);
+        }
+    }
+}
+
+function resetIcons() {
+    let icons = [
+        { selector: '.main', defaultClass: 'fi-rr-home', selectedClass: 'fi-ss-home' },
+        { selector: '.offer', defaultClass: 'fi-rr-badge-percent', selectedClass: 'fi-ss-badge-percent' },
+        { selector: '.about', defaultClass: 'fi-rr-info', selectedClass: 'fi-ss-info' }
+    ];
+
+    icons.forEach(iconObj => {
+        let icon = document.querySelector(iconObj.selector);
+        if (icon) {
+            icon.classList.remove(iconObj.selectedClass);
+            icon.classList.add(iconObj.defaultClass);
+        }
+    });
+}
+
+//_________________________________________________________
 // home page 
 let items = document.querySelector('.items');
 
