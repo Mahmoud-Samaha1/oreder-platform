@@ -20,6 +20,10 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
     <style>
       :root {
         --main-bg-color: rgb(255, 255, 255);
@@ -39,37 +43,56 @@
         <div class="mobile-app">
           <!-- Logo  -->
           <div class="logo row justify-content-center align-items-center">
-            <div class="col-10 d-flex align-items-center">
-              <img class="w-25" data-src="/assets/images/logo3.png" alt="" />
-            </div>
-            <button
-              onclick="goBack()"
-              type="button"
-              class="btn back-btn col-2 d-flex justify-content-center align-items-center"
-            >
-              <i class="fi fi-rr-arrow-left"></i>
-            </button>
+            <img
+              class="col-12 w-25"
+              data-src="/assets/images/logo3.png"
+              alt=""
+            />
           </div>
           <!-- about us -->
-          <div class="contact-container">
-            <h2>Contact Us</h2>
+          <div class="d-flex justify-content-center align-items-center">
+            <div
+              class="contact-container d-flex justify-content-center align-items-center flex-column"
+            >
+              <h2 class="mb-1 fw-bold">تواصل معنا...</h2>
 
-            <div class="contact-info">
-              <p>📞 Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
-              <p>📩 SMS: <a href="sms:+1234567890">Send a text</a></p>
-            </div>
+              <div class="contact-info mt-2 mb-3">
+                <p
+                  class="d-flex justify-content-center align-items-center mb-1"
+                >
+                  <i class="fi fi-ss-phone-call"></i>
+                  <a href="tel:+1234567890" class="ms-1">+1 234 567 890</a>
+                </p>
+                <p class="d-flex justify-content-center align-items-center">
+                  <i class="fi fi-ss-comment-alt-dots"></i>
+                  <a href="sms:+1234567890" class="ms-1">أرسل لنا رسالة</a>
+                </p>
+              </div>
+              <h2 class="fw-bold">تابعنا على:</h2>
 
-            <div class="social-media">
-              <a href="fb://profile" target="_blank">🌐 Facebook</a>
-              <a href="instagram://user?username=yourusername" target="_blank"
-                >📸 Instagram</a
-              >
-              <a href="twitter://user?screen_name=yourusername" target="_blank"
-                >🐦 Twitter</a
-              >
-              <a href="https://wa.me/1234567890" target="_blank">💬 WhatsApp</a>
+              <div class="social-media">
+                <a href="fb://profile" target="_blank">
+                  <img src="/assets/images/facebook.png" alt="" />
+                </a>
+                <a
+                  href="instagram://user?username=yourusername"
+                  target="_blank"
+                >
+                  <img src="/assets/images/instagram.png" alt="" />
+                </a>
+                <a
+                  href="twitter://user?screen_name=yourusername"
+                  target="_blank"
+                >
+                  <img src="/assets/images/twitter.png" alt="" />
+                </a>
+                <a href="https://wa.me/1234567890" target="_blank">
+                  <img src="/assets/images/whatsapp.png" alt="" />
+                </a>
+              </div>
             </div>
           </div>
+
           <!-- nav bar -->
           <div class="routing-bar row col-4">
             <div class="col-4">
