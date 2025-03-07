@@ -9,3 +9,7 @@ favIcons.forEach(icon => {
         }
     });
 });
+
+function goBack() {
+    window.history.back()
+}

@@ -5,21 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cruds</title>
     <link rel="stylesheet" href="/css/bootstrap.rtl.css" />
-    <link rel="stylesheet" href="/css/responsive.css" />
     <link rel="stylesheet" href="/css/Normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
+    <style>
+      :root {
+        --main-bg-color: rgb(255, 255, 255);
+        --main-color: rgb(102, 44, 121);
+        --hover-color: rgb(248 218 255);
+        --main-text: rgb(0, 0, 0);
+        --secondery-text: rgb(79 79 79);
+        --regular-font: "tajwal-regular";
+        --bold-font: "tajwal-bold";
+      }
+    </style>
   </head>
 
-  <body class="red-theme">
+  <body class="">
     <div class="app row">
-      <div class="col-3 mobile-app-wrapper">
+      <div class="col-4 mobile-app-wrapper">
         <div class="mobile-app">
           <div class="logo row justify-content-center align-items-center">
-            <img class="col-12 w-25" src="/assets/images/logo2.png" alt="" />
+            <img
+              class="col-12 w-25"
+              data-src="/assets/images/logo2.png"
+              alt=""
+            />
           </div>
           <div class="home-page">
             <div class="search p-2 mt-2">
@@ -59,7 +74,7 @@
               <div class="items row mt-2"></div>
             </div>
           </div>
-          <div class="routing-bar row">
+          <div class="routing-bar row col-4">
             <div class="col-4">
               <a href="">
                 <i class="fi fi-rr-home"></i>
@@ -81,11 +96,11 @@
           </div>
         </div>
       </div>
-      <div class="col-9 desktop-bg">
+      <div class="col-8 desktop-bg">
         <div
           class="gradient w-100 h-100 d-flex justify-content-center align-items-center"
         >
-          <img class="w-25" src="/assets/images/logo2.png" alt="" />
+          <img class="w-25" data-src="/assets/images/logo2.png" alt="" />
         </div>
       </div>
     </div>
