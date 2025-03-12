@@ -20,9 +20,11 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css"
     />
+    <link rel="stylesheet" type="text/css" href="/JS/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/JS/slick/slick-theme.css" />
     <style>
       :root {
-        --main-bg-color: rgb(255, 255, 255);
+        --main-bg-color: rgb(247, 247, 247);
         --main-color: rgb(102, 44, 121);
         --hover-color: rgb(248 218 255);
         --main-text: rgb(0, 0, 0);
@@ -80,6 +82,50 @@
                   >عرض المزيد</a
                 > -->
               </div>
+              <div class="category-carousel">
+                <div class="">
+                  <a
+                    href=""
+                    class="d-flex justify-content-center align-items-center"
+                  ></a>
+                  <img src="/assets/images/logo3.png" class="w-50" />
+                </div>
+                <div class="">
+                  <a
+                    href=""
+                    class="d-flex justify-content-center align-items-center"
+                  ></a>
+                  <img src="/assets/images/logo3.png" class="w-50" />
+                </div>
+                <div class="">
+                  <a
+                    href=""
+                    class="d-flex justify-content-center align-items-center"
+                  ></a>
+                  <img src="/assets/images/logo3.png" class="w-50" />
+                </div>
+                <div class="">
+                  <a
+                    href=""
+                    class="d-flex justify-content-center align-items-center"
+                  ></a>
+                  <img src="/assets/images/logo3.png" class="w-50" />
+                </div>
+                <div class="">
+                  <a
+                    href=""
+                    class="d-flex justify-content-center align-items-center"
+                  ></a>
+                  <img src="/assets/images/logo3.png" class="w-50" />
+                </div>
+                <div class="">
+                  <a
+                    href=""
+                    class="d-flex justify-content-center align-items-center"
+                  ></a>
+                  <img src="/assets/images/logo3.png" class="w-50" />
+                </div>
+              </div>
               <div class="items row mt-2"></div>
             </div>
           </div>
@@ -114,5 +160,29 @@
       </div>
     </div>
     <script src="/JS/main.js"></script>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="/JS/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".category-carousel").slick({
+          dots: false,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          adaptiveHeight: true,
+          rtl: true,
+        });
+      });
+    </script>
   </body>
 </html>

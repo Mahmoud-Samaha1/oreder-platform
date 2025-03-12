@@ -19,6 +19,10 @@ a {
   color: var(--main-text);
 }
 
+body {
+  background-color: var(--main-bg-color);
+}
+
 .app {
   height: 100vh;
   margin: 0;
@@ -115,6 +119,17 @@ a {
             a {
               font-size: 12px;
               font-weight: 500;
+            }
+          }
+
+          .category-carousel {
+
+            .slick-slide {
+              background-color: white;
+              margin-inline: 10px;
+              border-radius: 10px;
+
+              img {}
             }
           }
 
