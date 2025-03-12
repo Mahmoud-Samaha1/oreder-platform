@@ -93,4 +93,34 @@ function getCategories() {
 getCategories();
 // _____________________________________________________________
 // category page
+let favIcons = document.querySelectorAll('.like-icon')
 
+favIcons.forEach(icon => {
+    icon.addEventListener('click', function () {
+        if (this.classList.contains('fi-rs-heart')) {
+            this.classList.replace('fi-rs-heart', 'fi-ss-heart');
+        } else {
+            this.classList.replace('fi-ss-heart', 'fi-rs-heart');
+        }
+    });
+});
+// _______________________________________________
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+console.log(scrollToTopBtn);
+
+// Show button when scrolling down
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) { // Show after scrolling 300px
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+});
+
+// Smooth scroll to top
+scrollToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
