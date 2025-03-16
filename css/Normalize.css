@@ -16,7 +16,7 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 /* Sections

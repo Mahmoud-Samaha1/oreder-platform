@@ -90,7 +90,7 @@ function getCategories() {
         });
     });
 }
-getCategories();
+// getCategories();
 // _____________________________________________________________
 // category page
 let favIcons = document.querySelectorAll('.like-icon')
@@ -105,22 +105,24 @@ favIcons.forEach(icon => {
     });
 });
 // _______________________________________________
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-console.log(scrollToTopBtn);
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    const appWrapper = document.querySelector(".mobile-app-wrapper");
 
-// Show button when scrolling down
-window.addEventListener("scroll", function () {
-    if (window.scrollY > 300) { // Show after scrolling 300px
-        scrollToTopBtn.style.display = "block";
-    } else {
-        scrollToTopBtn.style.display = "none";
-    }
-});
+    // Show button when user scrolls down
+    appWrapper.addEventListener("scroll", function () {
+        if (appWrapper.scrollTop > 100) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    });
 
-// Smooth scroll to top
-scrollToTopBtn.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+    // Scroll to top when button is clicked
+    scrollToTopBtn.addEventListener("click", function () {
+        appWrapper.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
     });
 });
