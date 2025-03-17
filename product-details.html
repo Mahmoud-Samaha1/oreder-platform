@@ -22,7 +22,9 @@
     />
     <style>
       :root {
-        --main-bg-color: rgb(255, 255, 255);
+        --main-bg-color: rgb(247, 247, 247);
+        --secondary-bg-color: rgb(255, 255, 255);
+
         --main-color: rgb(102, 44, 121);
         --hover-color: rgb(248 218 255);
         --main-text: rgb(0, 0, 0);
@@ -39,16 +41,11 @@
         <div class="mobile-app">
           <!-- Logo  -->
           <div class="logo row justify-content-center align-items-center">
-            <div class="col-10 d-flex align-items-center">
-              <img class="w-25" data-src="/assets/images/logo3.png" alt="" />
-            </div>
-            <button
-              onclick="goBack()"
-              type="button"
-              class="btn back-btn col-2 d-flex justify-content-center align-items-center"
-            >
-              <i class="fi fi-ss-left-from-bracket"></i>
-            </button>
+            <img
+              class="col-12 logo-img"
+              data-src="/assets/images/logo3.png"
+              alt=""
+            />
           </div>
           <!-- product -->
           <div class="product-details">
@@ -70,13 +67,37 @@
                   class="product-price fs-3 d-flex justify-content-center align-items-center"
                 >
                   <p class="text-center m-0 me-1">175</p>
-                  <span class="">EGP</span>
+                  <span class="">SR</span>
                 </div>
               </div>
             </div>
             <p id="product-description " class="product-description mt-2">
-              هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
+              هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم هنالك العديد
+              من الأنواع المتوفرة لنصوص لوريم إيبسوم
             </p>
+            <div class="icons d-flex align-items-center flex-wrap">
+              <i
+                class="fi fi-ss-wheat-awn-circle-exclamation allergy-icon"
+                data-bs-toggle="modal"
+                data-bs-target="#allergyModal"
+              ></i>
+              <i class="fi fi-ss-flame">
+                <span class="ms-1">150 Cal</span>
+              </i>
+              <i class="fi fi-ss-walking">
+                <span class="ms-1">2h</span>
+              </i>
+
+              <!-- <i class="fi fi-ss-user-fast-running">
+                          <span class="ms-1">1h</span>
+                        </i> -->
+              <!-- <i class="fi fi-ss-biking">
+                          <span class="ms-1">2h</span>
+                        </i> -->
+              <!-- <i class="fi fi-ss-dumbbell-weightlifting">
+                          <span class="ms-1">2h</span>
+                        </i> -->
+            </div>
           </div>
           <!-- nav bar -->
           <div class="routing-bar row col-4">
@@ -100,7 +121,46 @@
             </div>
           </div>
         </div>
+        <!-- allergy modal -->
+        <div
+          class="modal fade"
+          id="allergyModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  تنبيه للحساسية
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  هذا المنتج قد يحتوي على مكونات تسبب الحساسية لبعض الأشخاص.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-close-modal"
+                  data-bs-dismiss="modal"
+                >
+                  إغلاق
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="col-8 desktop-bg">
         <div
           class="gradient w-100 h-100 d-flex justify-content-center align-items-center"
@@ -109,6 +169,7 @@
         </div>
       </div>
     </div>
+    <script src="/JS/bootstrap.bundle.js"></script>
     <script src="/JS/main.js"></script>
     <script src="/JS/category.js"></script>
   </body>
