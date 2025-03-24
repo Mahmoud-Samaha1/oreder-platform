@@ -93,6 +93,7 @@ function getCategories() {
 // getCategories();
 // _____________________________________________________________
 // category page
+// like Icon
 let favIcons = document.querySelectorAll('.like-icon')
 
 favIcons.forEach(icon => {
@@ -125,4 +126,30 @@ document.addEventListener("DOMContentLoaded", function () {
             behavior: "smooth",
         });
     });
+});
+//========================================
+// hide category carousel img
+
+let appWrapper = document.querySelector(".mobile-app-wrapper");
+let categoryCarouselButtons = document.querySelector(".category-carousel-buttons");
+let categoryCarouselImages = document.querySelector(".category-carousel-images");
+let lastScrollY = appWrapper.scrollY;
+appWrapper.addEventListener("scroll", function () {
+    let imagesBottom = categoryCarouselImages.getBoundingClientRect().bottom; // Calculate once
+
+    console.log(imagesBottom.toFixed());
+    // console.log(appWrapper.scrollTop);
+
+    if (imagesBottom.toFixed() < 0) {
+        categoryCarouselButtons.style.position = "fixed";
+        // categoryCarouselButtons.style.position = "sticky";
+        categoryCarouselButtons.style.top = "0";
+        console.log("sticky");
+
+    } else {
+        categoryCarouselButtons.style.position = "absolute";
+        categoryCarouselButtons.style.top = "-930px";
+        console.log("abs");
+
+    }
 });

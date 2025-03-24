@@ -30,7 +30,7 @@
       :root {
         --main-bg-color: rgb(247, 247, 247);
         --secondary-bg-color: rgb(255, 255, 255);
-        --main-color: rgb(155, 18, 18);
+        --main-color: rgb(102, 44, 121);
         --hover-color: rgb(248 218 255);
         --main-text: rgb(0, 0, 0);
         --secondery-text: rgb(79 79 79);
@@ -49,6 +49,28 @@
             <img
               class="col-12 logo-img"
               data-src="/assets/images/logo3.png"
+              alt=""
+            />
+          </div>
+          <div class="offers offers-carousel">
+            <img
+              class="offer-img my-2 mx-1"
+              data-src="/assets/images/offer.png"
+              alt=""
+            />
+            <img
+              class="offer-img my-2 mx-1"
+              data-src="/assets/images/offer.png"
+              alt=""
+            />
+            <img
+              class="offer-img my-2 mx-1"
+              data-src="/assets/images/offer.png"
+              alt=""
+            />
+            <img
+              class="offer-img my-2 mx-1"
+              data-src="/assets/images/offer.png"
               alt=""
             />
           </div>
@@ -78,7 +100,7 @@
                 </button>
               </div>
             </div>
-            <div class="categories p-2 mt-2">
+            <div class="categories p-2 mt-2 position-relative">
               <div
                 class="head-line row justify-content-center align-items-center"
               >
@@ -87,13 +109,15 @@
                   >عرض المزيد</a
                 > -->
               </div>
-              <div class="category-carousel mb-3 py-3 row">
+
+              <!-- category-carousel-buttons -->
+              <div class="category-carousel-buttons mb-3 py-3 row">
                 <div
-                  class="d-flex justify-content-center align-items-center flex-column"
+                  class=" d-flex justify-content-center align-items-center flex-column"
                 >
                   <a
                     href="#c-1"
-                    class="btn d-flex justify-content-center align-items-center flex-column w-100 selected"
+                    class="btn carousel-btn d-flex justify-content-center align-items-center flex-column w-100 selected"
                     role="button"
                   >
                     قسم 1
@@ -112,14 +136,18 @@
                     <!-- <p class="fw-bold">قسم 1</p> -->
                   </a>
                 </div>
+              </div>
+              <!-- category-carousel-images -->
+              <div class="category-carousel-images mb-3 py-3 row">
                 <div
-                  class="d-flex justify-content-center align-items-center flex-column"
+                  class=" d-flex justify-content-center align-items-center flex-column"
                 >
                   <a
                     href="#c-1"
-                    class="btn d-flex justify-content-center align-items-center flex-column w-100"
+                    class="btn carousel-btn d-flex justify-content-center align-items-center flex-column w-100 selected"
                     role="button"
                   >
+                  <img class="card-img carousel-image" alt="" src="/assets/images/66MTIsqFHUgKyzrPYh266VvDFsGbkK9WduHU4ALV.jpg">
                     قسم 1
                     <!-- <p class="fw-bold">قسم 1</p> -->
                   </a>
@@ -128,58 +156,11 @@
                   class="d-flex justify-content-center align-items-center flex-column"
                 >
                   <a
-                    href="#c-1"
+                    href="#c-2"
                     class="btn d-flex justify-content-center align-items-center flex-column w-100"
                     role="button"
                   >
-                    قسم 1
-                    <!-- <p class="fw-bold">قسم 1</p> -->
-                  </a>
-                </div>
-                <div
-                  class="d-flex justify-content-center align-items-center flex-column"
-                >
-                  <a
-                    href="#c-1"
-                    class="btn d-flex justify-content-center align-items-center flex-column w-100"
-                    role="button"
-                  >
-                    قسم 1
-                    <!-- <p class="fw-bold">قسم 1</p> -->
-                  </a>
-                </div>
-                <div
-                  class="d-flex justify-content-center align-items-center flex-column"
-                >
-                  <a
-                    href="#c-1"
-                    class="btn d-flex justify-content-center align-items-center flex-column w-100"
-                    role="button"
-                  >
-                    قسم 1
-                    <!-- <p class="fw-bold">قسم 1</p> -->
-                  </a>
-                </div>
-                <div
-                  class="d-flex justify-content-center align-items-center flex-column"
-                >
-                  <a
-                    href="#c-1"
-                    class="btn d-flex justify-content-center align-items-center flex-column w-100"
-                    role="button"
-                  >
-                    قسم 1
-                    <!-- <p class="fw-bold">قسم 1</p> -->
-                  </a>
-                </div>
-                <div
-                  class="d-flex justify-content-center align-items-center flex-column"
-                >
-                  <a
-                    href="#c-1"
-                    class="btn d-flex justify-content-center align-items-center flex-column w-100"
-                    role="button"
-                  >
+                  <img class="card-img carousel-image" alt="" src="/assets/images/66MTIsqFHUgKyzrPYh266VvDFsGbkK9WduHU4ALV.jpg">
                     قسم 1
                     <!-- <p class="fw-bold">قسم 1</p> -->
                   </a>
@@ -197,9 +178,7 @@
 
                 <!-- products -->
                 <div class="products">
-                  <div
-                    class="product row mt-3 p-1 align-items-center rounded-3"
-                  >
+                  <div class="product row mt-3 p-1 align-items-center rounded-3">
                     <a href="/product-details.html" class="col-4 px-1">
                       <img
                         data-src="/assets/images/66MTIsqFHUgKyzrPYh266VvDFsGbkK9WduHU4ALV.jpg"
@@ -207,22 +186,23 @@
                       />
                     </a>
 
-                    <div class="product-details col-6">
+                    <div class="product-details col-6 ps-1">
                       <a href="/product-details.html">
-                        <h5>اسم المنتج</h5>
-                        <p class="mb-2">
+                        <h5 class="">اسم المنتج</h5>
+                        <p class="mb-0">
                           هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
                           هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
                         </p>
                       </a>
-                      <div class="icons d-flex align-items-center flex-wrap">
+
+                      <div class="icons d-flex align-items-center">
                         <i
                           class="fi fi-ss-wheat-awn-circle-exclamation allergy-icon"
                           data-bs-toggle="modal"
                           data-bs-target="#allergyModal"
                         ></i>
                         <i class="fi fi-ss-flame">
-                          <span class="ms-1">150 Cal</span>
+                          <span class="ms-1">150Cal</span>
                         </i>
                         <i class="fi fi-ss-walking">
                           <span class="ms-1">2h</span>
@@ -241,12 +221,12 @@
                     </div>
 
                     <div
-                      class="product-price col-2 d-flex justify-content-center align-items-end flex-column"
+                      class="product-price col-2 d-flex justify-content-center align-items-end flex-column pe-1"
                     >
                       <span class="d-flex align-items-center mb-5">
                         <p class="m-0 me-1">4</p>
                         <i
-                          class="fi fi-rs-heart fs-5 like-icon d-flex align-items-center"
+                          class="fi fi-rs-heart fs-6 like-icon d-flex align-items-center"
                         >
                         </i>
                       </span>
@@ -255,9 +235,7 @@
                       </p>
                     </div>
                   </div>
-                  <div
-                    class="product row mt-3 p-1 align-items-center rounded-3"
-                  >
+                  <div class="product row mt-3 p-1 align-items-center rounded-3">
                     <a href="/product-details.html" class="col-4 px-1">
                       <img
                         data-src="/assets/images/66MTIsqFHUgKyzrPYh266VvDFsGbkK9WduHU4ALV.jpg"
@@ -265,22 +243,23 @@
                       />
                     </a>
 
-                    <div class="product-details col-6">
+                    <div class="product-details col-6 ps-1">
                       <a href="/product-details.html">
-                        <h5>اسم المنتج</h5>
-                        <p class="mb-2">
+                        <h5 class="">اسم المنتج</h5>
+                        <p class="mb-0">
                           هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
                           هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
                         </p>
                       </a>
-                      <div class="icons d-flex align-items-center flex-wrap">
+
+                      <div class="icons d-flex align-items-center">
                         <i
                           class="fi fi-ss-wheat-awn-circle-exclamation allergy-icon"
                           data-bs-toggle="modal"
                           data-bs-target="#allergyModal"
                         ></i>
                         <i class="fi fi-ss-flame">
-                          <span class="ms-1">150 Cal</span>
+                          <span class="ms-1">150Cal</span>
                         </i>
                         <i class="fi fi-ss-walking">
                           <span class="ms-1">2h</span>
@@ -299,12 +278,12 @@
                     </div>
 
                     <div
-                      class="product-price col-2 d-flex justify-content-center align-items-end flex-column"
+                      class="product-price col-2 d-flex justify-content-center align-items-end flex-column pe-1"
                     >
                       <span class="d-flex align-items-center mb-5">
                         <p class="m-0 me-1">4</p>
                         <i
-                          class="fi fi-rs-heart fs-5 like-icon d-flex align-items-center"
+                          class="fi fi-rs-heart fs-6 like-icon d-flex align-items-center"
                         >
                         </i>
                       </span>
@@ -313,9 +292,7 @@
                       </p>
                     </div>
                   </div>
-                  <div
-                    class="product row mt-3 p-1 align-items-center rounded-3"
-                  >
+                  <div class="product row mt-3 p-1 align-items-center rounded-3">
                     <a href="/product-details.html" class="col-4 px-1">
                       <img
                         data-src="/assets/images/66MTIsqFHUgKyzrPYh266VvDFsGbkK9WduHU4ALV.jpg"
@@ -323,22 +300,23 @@
                       />
                     </a>
 
-                    <div class="product-details col-6">
+                    <div class="product-details col-6 ps-1">
                       <a href="/product-details.html">
-                        <h5>اسم المنتج</h5>
-                        <p class="mb-2">
+                        <h5 class="">اسم المنتج</h5>
+                        <p class="mb-0">
                           هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
                           هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
                         </p>
                       </a>
-                      <div class="icons d-flex align-items-center flex-wrap">
+
+                      <div class="icons d-flex align-items-center">
                         <i
                           class="fi fi-ss-wheat-awn-circle-exclamation allergy-icon"
                           data-bs-toggle="modal"
                           data-bs-target="#allergyModal"
                         ></i>
                         <i class="fi fi-ss-flame">
-                          <span class="ms-1">150 Cal</span>
+                          <span class="ms-1">150Cal</span>
                         </i>
                         <i class="fi fi-ss-walking">
                           <span class="ms-1">2h</span>
@@ -357,12 +335,12 @@
                     </div>
 
                     <div
-                      class="product-price col-2 d-flex justify-content-center align-items-end flex-column"
+                      class="product-price col-2 d-flex justify-content-center align-items-end flex-column pe-1"
                     >
                       <span class="d-flex align-items-center mb-5">
                         <p class="m-0 me-1">4</p>
                         <i
-                          class="fi fi-rs-heart fs-5 like-icon d-flex align-items-center"
+                          class="fi fi-rs-heart fs-6 like-icon d-flex align-items-center"
                         >
                         </i>
                       </span>
@@ -371,9 +349,7 @@
                       </p>
                     </div>
                   </div>
-                  <div
-                    class="product row mt-3 p-1 align-items-center rounded-3"
-                  >
+                  <div class="product row mt-3 p-1 align-items-center rounded-3">
                     <a href="/product-details.html" class="col-4 px-1">
                       <img
                         data-src="/assets/images/66MTIsqFHUgKyzrPYh266VvDFsGbkK9WduHU4ALV.jpg"
@@ -381,22 +357,23 @@
                       />
                     </a>
 
-                    <div class="product-details col-6">
+                    <div class="product-details col-6 ps-1">
                       <a href="/product-details.html">
-                        <h5>اسم المنتج</h5>
-                        <p class="mb-2">
+                        <h5 class="">اسم المنتج</h5>
+                        <p class="mb-0">
                           هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
                           هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
                         </p>
                       </a>
-                      <div class="icons d-flex align-items-center flex-wrap">
+
+                      <div class="icons d-flex align-items-center">
                         <i
                           class="fi fi-ss-wheat-awn-circle-exclamation allergy-icon"
                           data-bs-toggle="modal"
                           data-bs-target="#allergyModal"
                         ></i>
                         <i class="fi fi-ss-flame">
-                          <span class="ms-1">150 Cal</span>
+                          <span class="ms-1">150Cal</span>
                         </i>
                         <i class="fi fi-ss-walking">
                           <span class="ms-1">2h</span>
@@ -415,12 +392,12 @@
                     </div>
 
                     <div
-                      class="product-price col-2 d-flex justify-content-center align-items-end flex-column"
+                      class="product-price col-2 d-flex justify-content-center align-items-end flex-column pe-1"
                     >
                       <span class="d-flex align-items-center mb-5">
                         <p class="m-0 me-1">4</p>
                         <i
-                          class="fi fi-rs-heart fs-5 like-icon d-flex align-items-center"
+                          class="fi fi-rs-heart fs-6 like-icon d-flex align-items-center"
                         >
                         </i>
                       </span>
@@ -429,253 +406,9 @@
                       </p>
                     </div>
                   </div>
-                </div>
+                  
               </div>
-              <div class="category" id="c-2">
-                <img
-                  class="category-img"
-                  data-src="/assets/images/66MTIsqFHUgKyzrPYh266VvDFsGbkK9WduHU4ALV.jpg"
-                  alt=""
-                />
-                <h1 id="category-title " class="text-center">قسم 1</h1>
-                <!-- <p id="category-description"></p> -->
-
-                <!-- products -->
-                <div class="products">
-                  <div
-                    class="product row mt-3 p-1 align-items-center rounded-3"
-                  >
-                    <a href="/product-details.html" class="col-4 px-1">
-                      <img
-                        data-src="/assets/images/66MTIsqFHUgKyzrPYh266VvDFsGbkK9WduHU4ALV.jpg"
-                        alt=""
-                      />
-                    </a>
-
-                    <div class="product-details col-6">
-                      <a href="/product-details.html">
-                        <h5>اسم المنتج</h5>
-                        <p class="mb-2">
-                          هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
-                          هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
-                        </p>
-                      </a>
-                      <div class="icons d-flex align-items-center flex-wrap">
-                        <i
-                          class="fi fi-ss-wheat-awn-circle-exclamation allergy-icon"
-                          data-bs-toggle="modal"
-                          data-bs-target="#allergyModal"
-                        ></i>
-                        <i class="fi fi-ss-flame">
-                          <span class="ms-1">150 Cal</span>
-                        </i>
-                        <i class="fi fi-ss-walking">
-                          <span class="ms-1">2h</span>
-                        </i>
-
-                        <!-- <i class="fi fi-ss-user-fast-running">
-                          <span class="ms-1">1h</span>
-                        </i> -->
-                        <!-- <i class="fi fi-ss-biking">
-                          <span class="ms-1">2h</span>
-                        </i> -->
-                        <!-- <i class="fi fi-ss-dumbbell-weightlifting">
-                          <span class="ms-1">2h</span>
-                        </i> -->
-                      </div>
-                    </div>
-
-                    <div
-                      class="product-price col-2 d-flex justify-content-center align-items-end flex-column"
-                    >
-                      <span class="d-flex align-items-center mb-5">
-                        <p class="m-0 me-1">4</p>
-                        <i
-                          class="fi fi-rs-heart fs-5 like-icon d-flex align-items-center"
-                        >
-                        </i>
-                      </span>
-                      <p class="text-center m-0">
-                        <span class="ms-1">SR</span>175
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="product row mt-3 p-1 align-items-center rounded-3"
-                  >
-                    <a href="/product-details.html" class="col-4 px-1">
-                      <img
-                        data-src="/assets/images/66MTIsqFHUgKyzrPYh266VvDFsGbkK9WduHU4ALV.jpg"
-                        alt=""
-                      />
-                    </a>
-
-                    <div class="product-details col-6">
-                      <a href="/product-details.html">
-                        <h5>اسم المنتج</h5>
-                        <p class="mb-2">
-                          هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
-                          هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
-                        </p>
-                      </a>
-                      <div class="icons d-flex align-items-center flex-wrap">
-                        <i
-                          class="fi fi-ss-wheat-awn-circle-exclamation allergy-icon"
-                          data-bs-toggle="modal"
-                          data-bs-target="#allergyModal"
-                        ></i>
-                        <i class="fi fi-ss-flame">
-                          <span class="ms-1">150 Cal</span>
-                        </i>
-                        <i class="fi fi-ss-walking">
-                          <span class="ms-1">2h</span>
-                        </i>
-
-                        <!-- <i class="fi fi-ss-user-fast-running">
-                          <span class="ms-1">1h</span>
-                        </i> -->
-                        <!-- <i class="fi fi-ss-biking">
-                          <span class="ms-1">2h</span>
-                        </i> -->
-                        <!-- <i class="fi fi-ss-dumbbell-weightlifting">
-                          <span class="ms-1">2h</span>
-                        </i> -->
-                      </div>
-                    </div>
-
-                    <div
-                      class="product-price col-2 d-flex justify-content-center align-items-end flex-column"
-                    >
-                      <span class="d-flex align-items-center mb-5">
-                        <p class="m-0 me-1">4</p>
-                        <i
-                          class="fi fi-rs-heart fs-5 like-icon d-flex align-items-center"
-                        >
-                        </i>
-                      </span>
-                      <p class="text-center m-0">
-                        <span class="ms-1">SR</span>175
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="product row mt-3 p-1 align-items-center rounded-3"
-                  >
-                    <a href="/product-details.html" class="col-4 px-1">
-                      <img
-                        data-src="/assets/images/66MTIsqFHUgKyzrPYh266VvDFsGbkK9WduHU4ALV.jpg"
-                        alt=""
-                      />
-                    </a>
-
-                    <div class="product-details col-6">
-                      <a href="/product-details.html">
-                        <h5>اسم المنتج</h5>
-                        <p class="mb-2">
-                          هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
-                          هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
-                        </p>
-                      </a>
-                      <div class="icons d-flex align-items-center flex-wrap">
-                        <i
-                          class="fi fi-ss-wheat-awn-circle-exclamation allergy-icon"
-                          data-bs-toggle="modal"
-                          data-bs-target="#allergyModal"
-                        ></i>
-                        <i class="fi fi-ss-flame">
-                          <span class="ms-1">150 Cal</span>
-                        </i>
-                        <i class="fi fi-ss-walking">
-                          <span class="ms-1">2h</span>
-                        </i>
-
-                        <!-- <i class="fi fi-ss-user-fast-running">
-                          <span class="ms-1">1h</span>
-                        </i> -->
-                        <!-- <i class="fi fi-ss-biking">
-                          <span class="ms-1">2h</span>
-                        </i> -->
-                        <!-- <i class="fi fi-ss-dumbbell-weightlifting">
-                          <span class="ms-1">2h</span>
-                        </i> -->
-                      </div>
-                    </div>
-
-                    <div
-                      class="product-price col-2 d-flex justify-content-center align-items-end flex-column"
-                    >
-                      <span class="d-flex align-items-center mb-5">
-                        <p class="m-0 me-1">4</p>
-                        <i
-                          class="fi fi-rs-heart fs-5 like-icon d-flex align-items-center"
-                        >
-                        </i>
-                      </span>
-                      <p class="text-center m-0">
-                        <span class="ms-1">SR</span>175
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="product row mt-3 p-1 align-items-center rounded-3"
-                  >
-                    <a href="/product-details.html" class="col-4 px-1">
-                      <img
-                        data-src="/assets/images/66MTIsqFHUgKyzrPYh266VvDFsGbkK9WduHU4ALV.jpg"
-                        alt=""
-                      />
-                    </a>
-
-                    <div class="product-details col-6">
-                      <a href="/product-details.html">
-                        <h5>اسم المنتج</h5>
-                        <p class="mb-2">
-                          هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
-                          هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم
-                        </p>
-                      </a>
-                      <div class="icons d-flex align-items-center flex-wrap">
-                        <i
-                          class="fi fi-ss-wheat-awn-circle-exclamation allergy-icon"
-                          data-bs-toggle="modal"
-                          data-bs-target="#allergyModal"
-                        ></i>
-                        <i class="fi fi-ss-flame">
-                          <span class="ms-1">150 Cal</span>
-                        </i>
-                        <i class="fi fi-ss-walking">
-                          <span class="ms-1">2h</span>
-                        </i>
-
-                        <!-- <i class="fi fi-ss-user-fast-running">
-                          <span class="ms-1">1h</span>
-                        </i> -->
-                        <!-- <i class="fi fi-ss-biking">
-                          <span class="ms-1">2h</span>
-                        </i> -->
-                        <!-- <i class="fi fi-ss-dumbbell-weightlifting">
-                          <span class="ms-1">2h</span>
-                        </i> -->
-                      </div>
-                    </div>
-
-                    <div
-                      class="product-price col-2 d-flex justify-content-center align-items-end flex-column"
-                    >
-                      <span class="d-flex align-items-center mb-5">
-                        <p class="m-0 me-1">4</p>
-                        <i
-                          class="fi fi-rs-heart fs-5 like-icon d-flex align-items-center"
-                        >
-                        </i>
-                      </span>
-                      <p class="text-center m-0">
-                        <span class="ms-1">SR</span>175
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
           <div class="routing-bar row col-4">
@@ -698,20 +431,19 @@
               </a>
             </div>
           </div>
-          <button id="scrollToTopBtn" class="btn btn-primary">↑</button>
         </div>
         <!-- allergy modal -->
         <div
           class="modal fade"
           id="allergyModal"
           tabindex="-1"
-          aria-labelledby="exampleModalLabel"
+          aria-labelledby="allergyModalLabel"
           aria-hidden="true"
         >
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                <h1 class="modal-title fs-5" id="allergyModalLabel">
                   تنبيه للحساسية
                 </h1>
                 <button
@@ -738,16 +470,16 @@
             </div>
           </div>
         </div>
+        <button id="scrollToTopBtn" class="btn btn-primary">↑</button>
       </div>
-      <div class="col-8 desktop-bg">
+    </div>
+<div class="col-8 desktop-bg">
         <div
           class="gradient w-100 h-100 d-flex justify-content-center align-items-center"
         >
           <img class="w-25" data-src="/assets/images/logo3.png" alt="" />
         </div>
       </div>
-    </div>
-
     <script src="/JS/bootstrap.bundle.js"></script>
     <script src="/JS/main.js"></script>
 
@@ -763,16 +495,58 @@
 
     <script type="text/javascript">
       $(document).ready(function () {
-        $(".category-carousel").slick({
-          dots: false,
-          infinite: false,
-          speed: 300,
-          slidesToShow: 3,
+        $(".offers-carousel").slick({
+          dots: true,
+          infinite: true,
+          speed: 200,
+          slidesToShow: 1,
           slidesToScroll: 1,
           adaptiveHeight: true,
           rtl: true,
           arrows: false,
-          swipe: true,
+          cssEase: 'cubic-bezier(0.25, 1, 0.5, 1)', 
+        swipe: true,              
+        touchThreshold: 10,       
+        draggable: true,          
+        edgeFriction: 0.05,   
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".category-carousel-images").slick({
+          dots: false,
+          infinite: false,
+          speed: 200,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          adaptiveHeight: true,
+          rtl: true,
+          arrows: false,
+          cssEase: 'cubic-bezier(0.25, 1, 0.5, 1)', 
+        swipe: true,              
+        touchThreshold: 10,       
+        draggable: true,          
+        edgeFriction: 0.05,   
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".category-carousel-buttons").slick({
+          dots: false,
+          infinite: false,
+          speed: 200,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          adaptiveHeight: true,
+          rtl: true,
+          arrows: false,
+          cssEase: 'cubic-bezier(0.25, 1, 0.5, 1)', 
+        swipe: true,              
+        touchThreshold: 10,       
+        draggable: true,          
+        edgeFriction: 0.05,   
         });
       });
     </script>

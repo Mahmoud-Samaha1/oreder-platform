@@ -98,6 +98,40 @@
                           <span class="ms-1">2h</span>
                         </i> -->
             </div>
+            <button
+              type="button"
+              class="btn rating-btn mt-3 d-flex justify-content-between"
+              data-bs-toggle="modal"
+              data-bs-target="#ratingModal"
+            >
+              <span class="">ليس لديك تقييم حتى الآن!</span>
+              <span class="fw-bolder">أضف تقييم</span>
+            </button>
+            <!-- rating-section -->
+            <div class="rating-section">
+              <div class="rating-cards mt-3">
+<div class="card mb-3" >
+  <div class="row">
+    <div class="col-3 d-flex justify-content-center align-items-center">
+      <img class="card-img-top w-75" src="/assets/images/no-profile-picture-15257.svg" alt="">
+    </div>
+    <div class="col-9">
+      <div class="card-body">
+        <h5 class="card-title">
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        <span class="icon">★</span>
+        </h5>
+        <p class="card-text">هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
           </div>
           <!-- nav bar -->
           <div class="routing-bar row col-4">
@@ -126,13 +160,13 @@
           class="modal fade"
           id="allergyModal"
           tabindex="-1"
-          aria-labelledby="exampleModalLabel"
+          aria-labelledby="allergyModalLabel"
           aria-hidden="true"
         >
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                <h1 class="modal-title fs-5" id="allergyModalLabel">
                   تنبيه للحساسية
                 </h1>
                 <button
@@ -155,7 +189,90 @@
                 >
                   إغلاق
                 </button>
+
               </div>
+            </div>
+          </div>
+        </div>
+        <!-- rating modal -->
+<form action="" method="">
+        <div
+          class="modal fade"
+          id="ratingModal"
+          tabindex="-1"
+          aria-labelledby="ratingModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="ratingModalLabel">
+                  إضافة تقييم
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              
+                <div class="modal-body">
+                  <div class="">
+                    <textarea
+                      class="form-control"
+                      name=""
+                      id=""
+                      rows="3"
+                      placeholder="اكتب هنا"
+                    ></textarea>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="rating">
+                      <label>
+                        <input type="radio" name="stars" value="1" />
+                        <span class="icon">★</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="2" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="3" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="4" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="5" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer row justify-content-center">
+                  <button
+                    type="button"
+                    class="btn btn-close-review btn-outline-light col-5"
+                    data-bs-dismiss="modal"
+                  >
+                    إغلاق
+                  </button>
+                  <button type="button" class="btn save-btn col-5">حفظ</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

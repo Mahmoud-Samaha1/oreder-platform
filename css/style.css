@@ -30,9 +30,9 @@ body {
 #scrollToTopBtn {
   width: 40px;
   height: 40px;
-  position: fixed;
+  position: sticky;
   bottom: 70px;
-  right: 85%;
+  right: 90%;
   display: none;
   /* Hidden initially */
   background-color: var(--main-color);
@@ -46,6 +46,14 @@ body {
 }
 
 
+.hide-carousel img.carousel-image {
+  display: none !important;
+
+}
+
+.hide-carousel-img {
+  display: none;
+}
 
 .app {
   height: 100vh;
@@ -158,8 +166,9 @@ body {
             }
           }
 
-          .category-carousel {
-            position: sticky;
+          /* category-carousel-images  */
+          .category-carousel-images {
+            /* position: sticky; */
             top: 0;
             background-color: var(--main-bg-color);
             /* margin-inline: -20px; */
@@ -187,7 +196,7 @@ body {
             }
 
             .slick-slide {
-              height: 45px;
+              /* height: 45px; */
               margin-inline: 5px;
 
               a.selected {
@@ -204,12 +213,15 @@ body {
                 background-color: white;
                 border-radius: 5px;
                 /* height: 40px; */
+                padding: 5px;
+                margin-block: 5px;
                 overflow: hidden;
                 box-shadow: 0px 1px 3px 0px var(--main-color);
                 color: var(--main-color);
                 font-family: var(--regular-font);
                 font-weight: 600;
 
+                /* display: block; */
                 &:active {
                   border: none;
                   background-color: var(--main-color);
@@ -219,6 +231,86 @@ body {
                 img {
                   border-radius: 5px;
                 }
+
+
+
+
+              }
+
+
+            }
+          }
+
+          /* category-carousel-buttons  */
+          .category-carousel-buttons {
+            position: absolute;
+            width: 100%;
+            z-index: 50;
+
+            top: -930px;
+            transition: all 0.3s ease-in-out;
+            background-color: var(--main-bg-color);
+
+            .slick-prev,
+            .slick-next {
+              /* top: 30% !important; */
+            }
+
+            .slick-prev::before,
+            .slick-next::before {
+              font-size: 17px !important;
+              color: var(--main-color) !important;
+            }
+
+            .slick-prev {
+              right: -17px;
+
+            }
+
+            .slick-next {
+
+              left: -17px !important;
+
+            }
+
+            .slick-slide {
+              /* height: 45px; */
+              margin-inline: 5px;
+
+              a.selected {
+                border: none;
+                background-color: var(--main-color);
+                color: white;
+                border-radius: 5px;
+                font-family: var(--regular-font);
+                font-weight: 600;
+                box-shadow: 0px 1px 3px 0px var(--main-color);
+              }
+
+              a {
+                background-color: white;
+                border-radius: 5px;
+                /* height: 40px; */
+                padding: 5px;
+                margin-block: 5px;
+                overflow: hidden;
+                box-shadow: 0px 1px 3px 0px var(--main-color);
+                color: var(--main-color);
+                font-family: var(--regular-font);
+                font-weight: 600;
+
+                /* display: block; */
+                &:active {
+                  border: none;
+                  background-color: var(--main-color);
+                  color: white;
+                }
+
+                img {
+                  border-radius: 5px;
+                }
+
+
 
 
               }
@@ -397,9 +489,9 @@ body {
 
   i.allergy-icon {
     cursor: pointer;
-    font-size: 1rem;
-    height: 25px;
-    width: 25px;
+    font-size: .8rem;
+    height: 20px;
+    width: 20px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -412,8 +504,8 @@ body {
 
   i {
     cursor: pointer;
-    font-size: 1rem;
-    height: 25px;
+    font-size: .8rem;
+    height: 20px;
     width: auto;
     padding-inline: 6px;
     display: inline-flex;
@@ -484,6 +576,110 @@ body {
     }
   }
 
+}
+
+.rating-btn {
+  background-color: var(--main-color);
+  color: white;
+  font-size: 1rem;
+
+  &:active {
+    background-color: var(--main-color) !important;
+    color: white !important;
+    font-size: 1rem !important;
+    border: none !important;
+  }
+}
+
+/* rating modal */
+.rating {
+  display: inline-block;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  font-size: 30px;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: #919191;
+}
+
+.rating:not(:hover) label input:checked~.icon,
+.rating:hover label:hover input~.icon {
+  color: var(--main-color);
+}
+
+.rating label input:focus:not(:checked)~.icon:last-child {
+  color: #919191;
+  text-shadow: 0 0 5px var(--main-color);
+}
+
+.btn-close-review {
+  color: var(--main-color) !important;
+  border: 1px solid var(--main-color) !important;
+}
+
+.save-btn {
+  color: var(--secondary-bg-color) !important;
+  background-color: var(--main-color) !important;
+}
+
+/* ============================================================================= */
+/* rating-section */
+.rating-section {
+  .card-title {
+    .icon {
+      color: var(--main-color);
+    }
+  }
+
+  .card-text {
+    font-size: .8rem;
+  }
 }
 
 /* ================================================================================ */
