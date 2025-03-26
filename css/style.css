@@ -6,11 +6,14 @@
   font-family: tajwal-regular;
   /* src: url("/assets/fonts/Tajawal-Regular.ttf"); */
   src: url("/assets/fonts/JF-Flat-Regular.ttf");
+  /* src: url("/assets/fonts/alfont_com_Jozoor-Font-2.otf"); */
 }
 
 @font-face {
   font-family: tajwal-bold;
-  src: url("/assets/fonts/Tajawal-Bold.ttf");
+  /* src: url("/assets/fonts/Tajawal-Bold.ttf"); */
+  /* src: url("/assets/fonts/JF-Flat-Regular.ttf"); */
+  src: url("/assets/fonts/alfont_com_خط-جذور-فلات-عريض.ttf");
 }
 
 
@@ -729,9 +732,11 @@ body {
   ul {
     li {
       font-size: .8rem;
+      padding-inline-start: 5px;
 
       &::marker {
         content: '-';
+        margin-inline-end: 5px;
         font-weight: bolder;
       }
     }
