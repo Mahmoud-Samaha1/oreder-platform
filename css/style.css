@@ -719,7 +719,24 @@ body {
   }
 }
 
+.location-icon {
+  color: var(--main-color);
+  font-size: 1.5rem;
 
+}
+
+.contact-info {
+  ul {
+    li {
+      font-size: .8rem;
+
+      &::marker {
+        content: '-';
+        font-weight: bolder;
+      }
+    }
+  }
+}
 
 input,
 textarea {
@@ -761,6 +778,6 @@ button:hover {
   color: #007bff;
 
   img {
-    width: 80%;
+    width: 50%;
   }
 }
