@@ -4,7 +4,8 @@
 
 @font-face {
   font-family: tajwal-regular;
-  src: url("/assets/fonts/Tajawal-Regular.ttf");
+  /* src: url("/assets/fonts/Tajawal-Regular.ttf"); */
+  src: url("/assets/fonts/JF-Flat-Regular.ttf");
 }
 
 @font-face {
@@ -671,6 +672,8 @@ body {
 /* ============================================================================= */
 /* rating-section */
 .rating-section {
+  margin-bottom: 5rem;
+
   .card-title {
     .icon {
       color: var(--main-color);

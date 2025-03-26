@@ -18,6 +18,10 @@
 
 
 @media only screen and (max-width: 767px) {
+    .category-carousel-buttons {
+        display: block !important;
+    }
+
     .app {
         justify-content: center;
         background-color: var(--main-bg-color);
