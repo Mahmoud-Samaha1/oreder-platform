@@ -6,15 +6,16 @@
   font-family: tajwal-regular;
   /* src: url("/assets/fonts/Tajawal-Regular.ttf"); */
   /* src: url("/assets/fonts/JF-Flat-Regular.ttf"); */
-  /* src: url("/assets/fonts/alfont_com_Jozoor-Font-2.otf"); */
-  src: url("/assets/fonts/JF/ArbFONTS-JF\ Flat\ Regular.otf");
+  src: url("/assets/fonts/alfont_com_Jozoor-Font-2.otf");
+  /* src: url("/assets/fonts/JF/ArbFONTS-JF\ Flat\ Regular.otf"); */
 }
 
 @font-face {
   font-family: tajwal-bold;
   /* src: url("/assets/fonts/Tajawal-Bold.ttf"); */
   /* src: url("/assets/fonts/JF-Flat-Regular.ttf"); */
-  src: url("/assets/fonts/alfont_com_خط-جذور-فلات-عريض.ttf");
+  src: url("/assets/fonts/alfont_com_Jozoor-Font-2.otf");
+  /* src: url("/assets/fonts/alfont_com_خط-جذور-فلات-عريض.ttf"); */
 }
 
 
