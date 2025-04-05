@@ -5,8 +5,9 @@
 @font-face {
   font-family: tajwal-regular;
   /* src: url("/assets/fonts/Tajawal-Regular.ttf"); */
-  src: url("/assets/fonts/JF-Flat-Regular.ttf");
+  /* src: url("/assets/fonts/JF-Flat-Regular.ttf"); */
   /* src: url("/assets/fonts/alfont_com_Jozoor-Font-2.otf"); */
+  src: url("/assets/fonts/JF/ArbFONTS-JF\ Flat\ Regular.otf");
 }
 
 @font-face {
@@ -463,9 +464,6 @@ body {
           font-family: var(--bold-font);
 
           /* letter-spacing: .5px; */
-          span {
-            font-family: var(--regular-font);
-          }
         }
 
         span {
@@ -483,6 +481,13 @@ body {
       }
     }
   }
+}
+
+.riyal-icon {
+  fill: var(--main-color);
+  width: 15px;
+  height: auto;
+  display: block;
 }
 
 /* ======================================================================= */
@@ -708,8 +713,9 @@ body {
 /* about-us page*/
 
 .contact-container {
-  height: 400px;
+  height: auto;
   margin-top: 40px;
+  margin-bottom: 70px;
   background: #fff;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -741,6 +747,10 @@ body {
       }
     }
   }
+}
+
+#map {
+  height: 170px;
 }
 
 input,
