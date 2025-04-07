@@ -160,3 +160,21 @@ appWrapper.addEventListener("scroll", function () {
 
     }
 });
+//========================================
+// color category-carousel-buttons
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(
+        ".category-carousel-buttons a"
+    );
+
+    buttons.forEach((btn) => {
+        btn.addEventListener("click", function () {
+            // Remove 'selected' class from all buttons
+            buttons.forEach((b) => b.classList.remove("selected"));
+            // Add 'selected' class to the clicked one
+            this.classList.add("selected");
+        });
+    });
+});
+
+
