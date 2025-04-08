@@ -162,19 +162,45 @@ appWrapper.addEventListener("scroll", function () {
 });
 //========================================
 // color category-carousel-buttons
-document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(
-        ".category-carousel-buttons a"
-    );
+document.addEventListener("DOMContentLoaded", () => {
+    const appWrapper = document.querySelector(".mobile-app-wrapper");
+    const links = document.querySelectorAll(".category-carousel-buttons a");
 
-    buttons.forEach((btn) => {
-        btn.addEventListener("click", function () {
-            // Remove 'selected' class from all buttons
-            buttons.forEach((b) => b.classList.remove("selected"));
-            // Add 'selected' class to the clicked one
-            this.classList.add("selected");
-        });
+    // Get section elements from hrefs in <a>
+    const sections = Array.from(links).map((link) => {
+        const id = link.getAttribute("href").replace("#", "");
+        return document.getElementById(id);
     });
-});
 
+    function onScroll() {
+        let currentSectionId = null;
+
+        sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            const wrapperRect = appWrapper.getBoundingClientRect();
+
+            const sectionTop = rect.top - wrapperRect.top;
+            const sectionBottom = rect.bottom - wrapperRect.top;
+            const middleOfWrapper = appWrapper.clientHeight / 2;
+
+            if (
+                sectionTop <= middleOfWrapper &&
+                sectionBottom >= middleOfWrapper
+            ) {
+                currentSectionId = section.id;
+            }
+        });
+
+        links.forEach((link) => {
+            if (link.getAttribute("href") === `#${currentSectionId}`) {
+                link.classList.add("selected");
+            } else {
+                link.classList.remove("selected");
+            }
+        });
+    }
+
+    appWrapper.addEventListener("scroll", onScroll);
+    onScroll(); // Run on load
+});
 
