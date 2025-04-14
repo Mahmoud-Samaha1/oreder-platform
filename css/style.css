@@ -18,6 +18,10 @@
   /* src: url("/assets/fonts/alfont_com_خط-جذور-فلات-عريض.ttf"); */
 }
 
+@font-face {
+  font-family: ramadan-font;
+  src: url("/assets/fonts/ramadan/DGShamael-Regular.ttf");
+}
 
 
 /* style home page */

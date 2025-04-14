@@ -1,0 +1,11 @@
+.ramadan-bg {
+    height: 100vh;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M50,0 L60,30 L100,30 L65,50 L75,80 L50,60 L25,80 L35,50 L0,30 L40,30 Z" fill="white" stroke="black" stroke-width="2"/></svg>');
+    background-repeat: repeat;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+}
