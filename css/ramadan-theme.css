@@ -1,11 +1,17 @@
-.ramadan-bg {
-    height: 100vh;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M50,0 L60,30 L100,30 L65,50 L75,80 L50,60 L25,80 L35,50 L0,30 L40,30 Z" fill="white" stroke="black" stroke-width="2"/></svg>');
+.mobile-app-wrapper {
+    background-image: url(/assets/images/ramadan/ramadan-bg20.png);
+    background-size: 220px 220px;
     background-repeat: repeat;
-    background-color: black;
-    display: flex;
+}
+
+.desktop-bg {
+    background: url("/assets/images/ramadan/bg-side.jpg") !important;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex: 1 1;
     justify-content: center;
-    color: white;
-    font-family: sans-serif;
+    position: relative;
+    padding: 0px !important;
 }
