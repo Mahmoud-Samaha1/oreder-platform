@@ -15,3 +15,24 @@
     position: relative;
     padding: 0px !important;
 }
+
+.logo {
+    background-image: url(/assets/images/ramadan/header-pattern.svg) !important;
+    background-size: 200px 200px;
+    background-position: 0px -70px;
+    background-repeat: repeat;
+}
+
+.overlay-img {
+    position: absolute;
+    width: 100%;
+    right: 0px;
+
+}
+
+.ramadan-gradient {
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgb(0 0 0 / 20%) 0%, rgba(0, 212, 255, 0) 100%);
+}
+
+.thumbnail-wrapper {}
