@@ -809,8 +809,11 @@ button:hover {
 /* ================================================ */
 /* loader */
 .loader-wrapper {
-
+  background-color: #ffffff4a;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .loader {
     width: 50px;
@@ -826,12 +829,11 @@ button:hover {
     -webkit-mask-composite: source-out;
     mask-composite: subtract;
     animation: l3 1s infinite linear;
+  }
+}
 
-
-    @keyframes l3 {
-      to {
-        transform: rotate(1turn)
-      }
-    }
+@keyframes l3 {
+  to {
+    transform: rotate(1turn)
   }
 }
