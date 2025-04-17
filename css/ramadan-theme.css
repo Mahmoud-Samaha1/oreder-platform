@@ -66,3 +66,32 @@
         -webkit-transform: rotate3d(0, 0, 1, 0deg);
     }
 }
+
+/* 
+.thumbnail-wrapper {
+
+
+    img {
+        -webkit-mask-image: url(/assets/images/ramadan/shape3.png);
+        mask-image: url(/assets/images/ramadan/shape3.png);
+        mask-repeat: no-repeat;
+        mask-size: cover;
+        height: auto !important;
+
+    }
+} */
+.card-img {
+    -webkit-mask-image: url(/assets/images/ramadan/shape2.png);
+    mask-image: url(/assets/images/ramadan/shape2.png);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    height: auto !important;
+}
+
+/* ======================================== */
+.category-carousel-buttons {
+    background-image: url(/assets/images/ramadan/header-pattern.svg) !important;
+    background-size: 200px 200px;
+    background-position: 0px -70px;
+    background-repeat: repeat;
+}
