@@ -85,7 +85,7 @@
     mask-image: url(/assets/images/ramadan/shape2.png);
     mask-repeat: no-repeat;
     mask-size: cover;
-    height: auto !important;
+    mask-position: center;
 }
 
 /* ======================================== */
