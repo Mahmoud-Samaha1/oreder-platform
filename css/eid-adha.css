@@ -1,0 +1,85 @@
+.mobile-app-wrapper {
+    background-image: url(/assets/images/eid-adha/bg-pattern.png);
+    background-size: 220px 220px;
+    background-repeat: repeat;
+}
+
+.desktop-bg {
+    background: url("/assets/images/ramadan/bg-side.jpg") !important;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    position: relative;
+    padding: 0px !important;
+}
+
+.logo {
+    background-image: url(/assets/images/eid-adha/header-pattern.svg) !important;
+    background-size: 60px 100px;
+    background-position: top;
+    background-repeat: repeat;
+}
+
+.overlay-img {
+    position: absolute;
+    width: 100%;
+    right: 0px;
+
+}
+
+.ramadan-gradient {
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgb(0 0 0 / 20%) 0%, rgba(0, 212, 255, 0) 100%);
+}
+
+.eid-adha-loader {
+    background-image: url(/assets/images/eid-adha/eid-adha-loader.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+    animation: fadeIn 1s ease-out infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* 
+.thumbnail-wrapper {
+
+
+    img {
+        -webkit-mask-image: url(/assets/images/ramadan/shape3.png);
+        mask-image: url(/assets/images/ramadan/shape3.png);
+        mask-repeat: no-repeat;
+        mask-size: cover;
+        height: auto !important;
+
+    }
+} */
+.card-img {
+    -webkit-mask-image: url(/assets/images/ramadan/shape2.png);
+    mask-image: url(/assets/images/ramadan/shape2.png);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+}
+
+/* ======================================== */
+.category-carousel-buttons {
+    background-image: url(/assets/images/ramadan/header-pattern.svg) !important;
+    background-size: 200px 200px;
+    background-position: 0px -70px;
+    background-repeat: repeat;
+}

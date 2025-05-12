@@ -206,7 +206,7 @@ body {
             }
 
             .slick-slide {
-              height: 200px;
+              height: 160px;
               margin-inline: 5px;
 
               a.selected {
@@ -810,7 +810,7 @@ button:hover {
 /* ================================================ */
 /* loader */
 .loader-wrapper {
-  background-color: #ffffff4a;
+  background-color: #ffffffb3;
   position: absolute;
   display: flex;
   justify-content: center;
