@@ -78,8 +78,8 @@
 
 /* ======================================== */
 .category-carousel-buttons {
-    background-image: url(/assets/images/ramadan/header-pattern.svg) !important;
-    background-size: 200px 200px;
-    background-position: 0px -70px;
+    /* background-image: url(/assets/images/eid-adha/header-pattern.svg) !important; */
+    background-size: 60px 100px;
+    background-position: top;
     background-repeat: repeat;
 }

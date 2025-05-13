@@ -17,6 +17,29 @@ document.addEventListener("DOMContentLoaded", function () {
     images.forEach(img => observer.observe(img));
 });
 //_________________________________________________________
+// carousel height
+function setEqualSlideHeights() {
+    const slides = document.querySelectorAll(".slick-slide");
+    let maxHeight = 0;
+
+    // Reset all heights
+    slides.forEach((slide) => {
+        slide.style.height = "auto";
+    });
+
+    // Find the max height
+    slides.forEach((slide) => {
+        const height = slide.offsetHeight;
+        if (height > maxHeight) maxHeight = height;
+    });
+
+    // Set all to max height
+    slides.forEach((slide) => {
+        slide.style.height = maxHeight + "px";
+    });
+}
+
+//_________________________________________________________
 // Nav Bar
 window.onload = function () {
     let savedPage = localStorage.getItem('selectedPage') || 'main';

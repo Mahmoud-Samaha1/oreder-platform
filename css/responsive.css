@@ -14,7 +14,21 @@
 
 
 
-@media only screen and (max-width: 991px) {}
+@media only screen and (max-width: 1025px) {
+    .desktop-bg {
+        display: none !important;
+    }
+
+    .routing-bar {
+        width: 100% !important;
+    }
+
+    .mobile-app-wrapper {
+        background-color: var(--main-bg-color);
+        box-shadow: 0px 0px 7px #afafaf;
+        width: 100% !important;
+    }
+}
 
 
 @media only screen and (max-width: 767px) {

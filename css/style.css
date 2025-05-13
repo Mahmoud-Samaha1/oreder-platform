@@ -149,6 +149,9 @@ body {
           }
 
           #searchQuerySubmit {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
             background: none;
             border: none;
             outline: none;
@@ -206,7 +209,7 @@ body {
             }
 
             .slick-slide {
-              height: 160px;
+              /* height: 160px; */
               margin-inline: 5px;
 
               a.selected {
@@ -222,7 +225,7 @@ body {
               a {
                 background-color: white;
                 border-radius: 5px;
-                height: 100%;
+                /* height: 100%; */
                 padding: 5px;
                 margin-block: 5px;
                 overflow: hidden;
