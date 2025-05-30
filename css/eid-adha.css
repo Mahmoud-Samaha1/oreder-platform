@@ -1,8 +1,9 @@
 .mobile-app-wrapper {
-    background-image: url(/assets/images/eid-adha/bg-pattern.png);
-    background-size: 220px 220px;
+    background-image: url(/assets/images/eid-adha/bg-pattern-3.png);
+    background-size: 420px 420px;
     background-repeat: repeat;
 }
+
 
 .desktop-bg {
     background: url("/assets/images/ramadan/bg-side.jpg") !important;
@@ -17,10 +18,10 @@
 }
 
 .logo {
-    background-image: url(/assets/images/eid-adha/header-pattern.svg) !important;
-    background-size: 60px 100px;
-    background-position: top;
-    background-repeat: repeat;
+    background-image: url(/assets/images/eid-adha/header-pattern-3.png) !important;
+    background-size: 150px 80px;
+    background-position: 0px -2px;
+    background-repeat: repeat-x;
 }
 
 .overlay-img {
@@ -69,12 +70,14 @@
     }
 } */
 .card-img {
-    -webkit-mask-image: url(/assets/images/ramadan/shape2.png);
-    mask-image: url(/assets/images/ramadan/shape2.png);
+    -webkit-mask-image: url(/assets/images/eid-adha/carousel-icon.png);
+    mask-image: url(/assets/images/eid-adha/carousel-icon.png);
     mask-repeat: no-repeat;
     mask-size: cover;
     mask-position: center;
 }
+
+
 
 /* ======================================== */
 .category-carousel-buttons {

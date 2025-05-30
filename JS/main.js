@@ -17,6 +17,61 @@ document.addEventListener("DOMContentLoaded", function () {
     images.forEach(img => observer.observe(img));
 });
 //_________________________________________________________
+// loader display
+
+window.addEventListener("load", () => {
+    let app = document.querySelector(".app");
+    const loaderWrapper = document.createElement('div');
+    loaderWrapper.className = 'loader-wrapper w-100 h-100';
+
+    loaderWrapper.innerHTML = `
+  <div class=" ramadan-loader d-none"></div>
+  <div class=" eid-adha-loader d-none"></div>
+  <div class=" loader d-none"></div>
+`;
+
+    if (app) {
+        app.appendChild(loaderWrapper);
+    } else {
+        console.warn('⚠️ لم يتم العثور على العنصر المستهدف لإضافة الـ loader.');
+    }
+
+    // ابحث عن رابط ملف الستايل المستخدم
+    const links = document.querySelectorAll('link[rel="stylesheet"]');
+    let theme = 'loader';
+
+    links.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href.includes('ramadan-theme.css')) {
+            theme = 'ramadan';
+        } else if (href.includes('eid-adha.css')) {
+            theme = 'eid';
+        }
+    });
+
+    // حدد الـ loader المناسب
+    const loaderSelector = {
+        'ramadan': '.ramadan-loader',
+        'eid': '.eid-adha-loader',
+        'loader': '.loader'
+    };
+
+    const loader = document.querySelector(loaderSelector[theme]);
+    console.log(loader);
+
+    if (loader) loader.classList.remove('d-none');
+
+    // إخفاء الـ loader بعد 3 ثواني
+
+
+
+    setTimeout(() => {
+        document.querySelector(".loader-wrapper").style.display = "none";
+
+    }, 2000);
+})
+
+//_________________________________________________________
 // carousel height
 function setEqualSlideHeights() {
     const slides = document.querySelectorAll(".slick-slide");
