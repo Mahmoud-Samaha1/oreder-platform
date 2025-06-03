@@ -6,14 +6,14 @@
 
 
 .desktop-bg {
-    background: url("/assets/images/ramadan/bg-side.jpg") !important;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex: 1 1;
-    justify-content: center;
-    position: relative;
+    background: url("/assets/images/eid-adha/bg-side.jpg") !important;
+    align-items: center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    display: flex !important;
+    flex: 1 1 !important;
+    justify-content: center !important;
+    position: relative !important;
     padding: 0px !important;
 }
 
