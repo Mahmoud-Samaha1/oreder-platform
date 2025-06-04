@@ -513,12 +513,12 @@ body {
     cursor: pointer;
     font-size: .8rem;
     height: 20px;
-    width: 20px;
+    width: 40px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border: 1px solid var(--main-color);
-    border-radius: 50%;
+    border-radius: 1rem;
     margin-inline-end: 5px;
     background-color: var(--main-color);
     color: white;
